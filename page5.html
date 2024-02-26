@@ -1,0 +1,156 @@
+<!--
+    Student name and number: Loredana Bura C22370523
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My guide to travelling!</title>
+    <link rel="stylesheet" type = "text/css" href=" css/style.css">
+    <script src="https://kit.fontawesome.com/dc7c5227b8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div id = "main">
+        <header>
+            <div class = banner>
+                <div class = "navbar">
+                    <a href ="https://youtube.com"><i class = "fa-brands fa-youtube"></i></a>
+                    <a href ="https://instagram.com"><i class = "fa-brands fa-instagram"></i></a>
+                    <a href ="https://twitter.com"><i class = "fa-brands fa-twitter"></i></a>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "page2.html">Travel bucket list</a></li>
+                    <li><a href = "page3.html">Favourite places</a></li>
+                    <li><a href = "page4.html">Tips</a></li>
+                    <li><a href = "page5.html">Form</a></li>
+                    <li><a href = "pictures.html">Pictures</a></li>
+
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Contact me </button>
+
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#title"><h3>Emails</h2></a>
+                            <hr>
+                            <a href="#email1">lore1dana@gmail.com</a>
+                            <a href="#emai2">lbura44@gmail.com</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+            </div>
+            <h3 id="DarkModetext">Dark Mode is OFF</h3>
+            <button onclick="darkMode()">Darkmode</button>
+            <button onclick="lightMode()">LightMode</button>
+        <h1>Form</h1>    
+        </header>
+
+        <div class="container">
+            <form id="myForm">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                  <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                </div>
+              </div>
+              </form>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                </div>
+              </div>
+              <div class ="row">
+                  <div class = "col-25">
+                      <label for="gender">Gender</label>
+                  </div>
+                  <div class="col-75">
+                      <input type="radio" id="gender" name="group" value="Male">
+                      <label for="groupOne">Male</label><br>
+                      <input type="radio" id="gender" name="group" value="Female">
+                      <label for="groupTwo">Female</label><br>
+                      <input type="radio" id="gender" name="group" value="Non-binary">
+                      <label for="groupThree">Non-binary</label>
+                      <input type="radio" id="gender" name="group" value="Not-say">
+                      <label for="groupThree">Would rather not say</label>
+                  </div>
+              </div>
+              <div class = "row">
+                  <div class="col-25">
+                      <label for="age">Age range</label>
+                  </div>
+                  <div class="col-75">
+                      <input type="checkbox" id="age" name="ageRange" value="less-18">
+                      <label for="languageOne"> less than 18</label><br>
+                      <input type="checkbox" id="age" name="ageRange" value="18-25">
+                      <label for="languageTwo"> 18-25</label><br>
+                      <input type="checkbox" id="age" name="ageRange" value="over 25">
+                      <label for="languageThree"> over 25</label><br>
+                  </div>
+              </div>
+              <div class = "row">
+                  <div class = "col-25">
+                      <label for="mail">Mail</label>
+                  </div>
+                  <div class ="col-75">
+                      <label for="email">Enter your email:</label>
+                      <input type="email" id="mail" name="email" placeholder="john@example.com" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-25">
+                    <label for="favourite">What was your favourite page?</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="favourite" name="favouritePage">
+                      <option value="p1">Home Page</option>
+                      <option value="p2">Travel Bucket List</option>
+                      <option value="p3">My Favourite Places</option>
+                      <option value="p4">Travel tips</option>
+                    </select>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="feedback">Feedback</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <button type ="submit" class = "btn" onclick="openPopup()">Submit</button>
+                <button type="submit" class = "btn" onclick="reset()">Reset</button>
+                <div class ="popup" id ="popup">
+                  <img src ="C:\Users\lored\OneDrive\Desktop\Web Development\Assignment_1\Images\tick.jpeg" alt="tick">
+                  <h2>Thank you!</h2>
+                  <p>Your feedback is successfully submitted.</p>
+                  <button type = "button" onclick="reset()">OK</button>
+            
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <footer>
+            <p>Developed by Loredana Bura, 2022</p>
+          </footer>
+
+    </div>
+
+  
+    <script src="javascript/script.js"></script>
+</body>
+</html>
